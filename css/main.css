@@ -136,6 +136,7 @@ table {
 
 .container {
   max-width: 1200px;
+  margin: 0 auto;
   
 }
 
@@ -211,6 +212,22 @@ header img {
   display: block;
   object-fit: cover;
   opacity: 0.4;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.wrapper  {
+  animation: fade 1s ease-out;
 }
 
 .wrapper h1 {
@@ -296,9 +313,8 @@ button:focus {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  padding: 10px;
   background-color: #f3f0e9;
-  margin-top: -70px;
+  margin-top: 20px;
 }
 
 .layout img {
@@ -593,4 +609,61 @@ hr {
   opacity: 0.3;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+/* min-width media query for the screen size of 768px and above  */
+
+@media (min-width: 768px) {
+
+  .wrapper h1 {
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 47px;
+    margin-top: -10px;
+    line-height: 1.2;
+  }
+
+  .wrapper p {
+    font-size: 16px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 10px;
+
+  }
+
+  .house h2 {
+    font-size: 18px;
+  }
+
+  .house h3 {
+    font-size: 39px;
+    margin-right: 200px;
+    font-weight: bold;
+  }
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
