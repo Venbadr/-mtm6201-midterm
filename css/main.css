@@ -230,6 +230,7 @@ header img {
 /* p customization */
 
 .wrapper p {
+  font-family: "karla";
   font-size: 16px;
   margin-left: 80px;
   margin-right: 80px;
@@ -429,7 +430,7 @@ button:focus {
 /* adding hover property  */
 
 .locat button:hover,
-.loact button:focus {
+.locat button:focus {
   background: white;
   color: black;
   outline: 1px solid white;
@@ -478,7 +479,7 @@ button:focus {
 
 .learn {
   margin-left: 10px;
-  font-family: "Lato";
+  font-family: "karla";
   background-color: #000;
   color: #fff;
   margin-bottom: 100px;
