@@ -536,7 +536,7 @@ button:focus {
 
 /*testimonials 1 customization */
 
-.testi h2 {
+.container1 h2 {
   color: #d69e3d;
   padding-top: 100px;
   padding-left: 10px;
@@ -546,7 +546,7 @@ button:focus {
   font-size: 20px;
 }
 
-.testi h3 {
+.container1 h3 {
   color: #fff;
   padding-bottom: 50px;
   font-family: "Lato";
@@ -780,7 +780,7 @@ hr {
   grid-area:location;
 }
 
-/* styling the "our menu" section as the provide mockup */
+/* styling the "about us " section as the provide mockup */
 .aboutus{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -793,7 +793,7 @@ hr {
   
 }
 
-/* areas */
+
 
 
 #abt {
@@ -856,10 +856,11 @@ font-size: 16px;
 
 /* testimonials customization */
 
-.testi h3 {
+.container1 h3 {
 font-size: 39px;
 padding-right: 100px;
 }
+
 
 
 
