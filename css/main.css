@@ -317,6 +317,63 @@ button:focus {
   margin-top: 20px;
 }
 
+
+/* grid customization to have the same mobile layout */
+
+.layout {
+    display: grid;
+    margin-top: -10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "latte latte "
+      "coffee pouring "
+      "cups smile"
+      ;
+      
+  }
+ 
+
+  #latte {
+    grid-area: latte;
+  }
+
+  #coffee {
+    grid-area: coffee;
+  }
+
+  #pouring {
+    grid-area: pouring;
+  }
+
+  #cups {
+    grid-area: cups;
+  }
+
+  #smile {
+    grid-area: smile;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .layout img {
   width: 100%;
 }
@@ -640,6 +697,44 @@ hr {
     margin-right: 200px;
     font-weight: bold;
   }
+
+  
+  .layout {
+    display: grid;
+    margin-top: -10px;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas:
+      "latte coffee pouring"
+      "latte cups smile"
+      ;
+      
+  }
+ 
+
+  #latte {
+    grid-area: latte;
+  }
+
+  #coffee {
+    grid-area: coffee;
+  }
+
+  #pouring {
+    grid-area: pouring;
+  }
+
+  #cups {
+    grid-area: cups;
+  }
+
+  #smile {
+    grid-area: smile;
+  }
+
+  
+
+
+  
   
 
 
