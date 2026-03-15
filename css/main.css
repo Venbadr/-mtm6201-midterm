@@ -134,12 +134,12 @@ table {
 
 /* The maximum width of the wrapper (container) within each section is 1200px */
 
-.container {
+header,
+main,
+footer {
   max-width: 1200px;
   margin: 0 auto;
-  
 }
-
 
 /* body customization */
 body {
@@ -166,7 +166,6 @@ header {
   text-align: center;
   padding: 20px;
 }
-
 
 header img {
   max-width: 250px;
@@ -226,7 +225,7 @@ header img {
   }
 }
 
-.wrapper  {
+.wrapper {
   animation: fade 1s ease-out;
 }
 
@@ -316,41 +315,37 @@ button:focus {
   margin-top: 20px;
 }
 
-
 /* grid customization to have the same mobile layout */
 
 .layout {
-    display: grid;
-    margin-top: -10px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "latte latte "
-      "coffee pouring "
-      "cups smile"
-      ;
-      
-  }
- 
+  display: grid;
+  margin-top: -10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "latte latte "
+    "coffee pouring "
+    "cups smile";
+}
 
-  #latte {
-    grid-area: latte;
-  }
+#latte {
+  grid-area: latte;
+}
 
-  #coffee {
-    grid-area: coffee;
-  }
+#coffee {
+  grid-area: coffee;
+}
 
-  #pouring {
-    grid-area: pouring;
-  }
+#pouring {
+  grid-area: pouring;
+}
 
-  #cups {
-    grid-area: cups;
-  }
+#cups {
+  grid-area: cups;
+}
 
-  #smile {
-    grid-area: smile;
-  }
+#smile {
+  grid-area: smile;
+}
 
 .layout img {
   width: 100%;
@@ -536,7 +531,7 @@ button:focus {
 
 /*testimonials 1 customization */
 
-.container1 h2 {
+.testimonials h2 {
   color: #d69e3d;
   padding-top: 100px;
   padding-left: 10px;
@@ -546,7 +541,7 @@ button:focus {
   font-size: 20px;
 }
 
-.container1 h3 {
+.testimonials h3 {
   color: #fff;
   padding-bottom: 50px;
   font-family: "Lato";
@@ -570,9 +565,7 @@ button:focus {
   color: #fff;
   font-family: "Karla";
   position: relative;
-  margin-top: -130px;
   line-height: 1.3;
-  padding-bottom: 10px;
   font-size: 16px;
 }
 .testi p {
@@ -594,6 +587,7 @@ button:focus {
   padding-left: 10px;
   padding-bottom: 10px;
 }
+
 /*testimonials 3 customization */
 #t3 {
   padding-top: 80px;
@@ -605,11 +599,11 @@ button:focus {
   padding-bottom: 90px;
 }
 
-.testi3 {
+.testi {
   position: relative;
 }
 
-.testi3 blockquote {
+.testi blockquote {
   position: absolute;
   bottom: 160px;
   padding-left: 30px;
@@ -619,7 +613,7 @@ button:focus {
   font-size: 16px;
 }
 
-.testi3 p {
+.testi p {
   position: absolute;
   bottom: 130px;
   padding-left: 30px;
@@ -627,6 +621,24 @@ button:focus {
   font-family: "Karla";
   text-transform: uppercase;
   font-size: 20px;
+}
+.jane p {
+  margin-bottom: -40px;
+}
+
+.jane blockquote {
+  margin-bottom: -40px;
+}
+
+.scott blockquote {
+  margin-bottom: -70px;
+  margin-right: 20px;
+}
+.scott p {
+  margin-bottom: -70px;
+}
+.susie blockquote {
+  margin-right: 20px;
 }
 
 /* footer customization */
@@ -649,7 +661,6 @@ hr {
 /* min-width media query for the screen size of 768px and above  */
 
 @media (min-width: 768px) {
-
   .wrapper h1 {
     padding-left: 80px;
     padding-right: 80px;
@@ -663,7 +674,6 @@ hr {
     padding-left: 53px;
     padding-right: 53px;
     padding-bottom: 10px;
-
   }
 
   .house h2 {
@@ -676,7 +686,6 @@ hr {
     font-weight: bold;
   }
 
-
   /* fixing the layout by adding grid property to match the tablet mockup  */
 
   .layout {
@@ -685,11 +694,8 @@ hr {
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-areas:
       "latte coffee pouring"
-      "latte cups smile"
-      ;
-      
+      "latte cups smile";
   }
- 
 
   #latte {
     grid-area: latte;
@@ -711,168 +717,396 @@ hr {
     grid-area: smile;
   }
 
-
   /* what we offer customization to match the mockup given */
   .gold h3 {
     font-size: 37px;
   }
 
+  .gold2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "fair baked"
+      "love love";
+  }
 
-.gold2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "fair baked"
-    "love love";
-  
+  .fair {
+    grid-area: fair;
+  }
+
+  .baked {
+    grid-area: baked;
+  }
+
+  .love {
+    grid-area: love;
+  }
+
+  .gold2 img {
+    width: 150px;
+  }
+
+  .gold2 p {
+    font-family: "Karla", sans-serif;
+    line-height: 1.2;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  /* adding margin to match the mockup p for the tablet layout */
+
+  .love {
+    margin-left: 190px;
+    margin-right: 190px;
+  }
+
+  /* making 2 columns using the template areas  */
+
+  .loc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "menu location";
+  }
+
+  .container {
+    grid-area: menu;
+  }
+
+  .locat {
+    grid-area: location;
+  }
+
+  /* styling the "about us " section as the provide mockup */
+  .aboutus {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "image  about "
+      "image  read"
+      "image  parag"
+      "image para"
+      "image  button";
+  }
+
+  #abt {
+    width: 450px;
+    height: 500px;
+    margin-top: -100px;
+  }
+
+  #abt {
+    grid-area: image;
+  }
+
+  .aboutus h2 {
+    grid-area: about;
+  }
+
+  .aboutus h3 {
+    grid-area: read;
+  }
+
+  .aboutus p {
+    grid-area: parag;
+  }
+
+  .aboutus p + p {
+    grid-area: para;
+  }
+
+  .learn {
+    grid-area: button;
+  }
+
+  /* about us section customization */
+
+  .aboutus h2 {
+    font-size: 18px;
+    margin-top: 50px;
+  }
+  .aboutus h3 {
+    font-size: 35px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .aboutus p {
+    font-size: 16px;
+    padding-top: 0px;
+  }
+
+  .learn {
+    width: 210px;
+    font-size: 16px;
+    margin-bottom: 200px;
+    margin-top: 5px;
+  }
+
+  .aboutus {
+    padding-top: 100px;
+  }
+
+  /* testimonials customization */
+
+  .container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+  }
+
+  .testimonials h3 {
+    padding-right: 200px;
+    font-size: 39px;
+  }
+  #t1,
+  #t2,
+  #t3 {
+    padding-top: 20px;
+    height: 400px;
+  }
+
+  .susie blockquote {
+    padding-bottom: 10px;
+  }
+
+  .susie p {
+    padding-bottom: 10px;
+  }
+
+  .jane p {
+  }
+
+  .jane blockquote {
+    margin-bottom: -40px;
+  }
+
+  .scott blockquote {
+    margin-bottom: -70px;
+    margin-right: 20px;
+  }
+  .scott p {
+    margin-bottom: -70px;
+  }
 }
 
-.fair {
-  grid-area: fair;
-}
+/* min-width media query for the screen size of 1100px and above  */
 
-.baked {
-  grid-area: baked;
-}
+@media (min-width: 1100px) {
+  /* customization of the header */
 
-.love {
-  grid-area: love;
-}
+  .wrapper h1 {
+    padding-top: 120px;
+    padding-left: 230px;
+    padding-right: 230px;
+    font-size: 61px;
+  }
 
-.gold2 img {
-  width: 150px;
-}
+  .wrapper p {
+    padding-left: 220px;
+    padding-right: 220px;
+  }
 
+  .navs {
+    padding-top: 0px;
+    gap: 30px;
+    padding-right: 100px;
+  }
 
-.gold2 p {
-  font-family: "Karla", sans-serif;
-  line-height: 1.2;
-  font-size: 15px;
-  margin-left: 20px ;
-  margin-right: 20px;
-  
+  .navs a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 16px;
+  }
 
-}
+  /* customization of the navs */
 
-/* adding margin to match the mockup p for the tablet layout */
+  .container3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding-bottom: 0px;
+  }
 
-.love {
-  margin-left: 190px;
-  margin-right: 190px;
-}
+  /* logo customization  */
+  #logo {
+    width: 200px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
 
-/* making 2 columns using the template areas  */
+  /* customization of the button */
+  .wrapper button {
+    padding: 20px;
+  }
 
-.loc{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  grid-template-areas:
-    "menu location";
-}
+  .house h3 {
+    font-size: 48px;
+    padding-left: 150px;
+  }
+  .house h2 {
+    padding-left: 150px;
+  }
+  /* customization of the welcome to my coffee house layout */
 
+  .layout {
+    width: 900px;
+    padding-left: 150px;
+    gap: 15px;
+  }
 
-.container{
-  grid-area:menu;
-}
+  .gold2 {
+    display: grid;
+  }
+  .gold2 {
+    display: grid;
+    padding-left: 150px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "fair baked love";
+  }
 
+  .gold2 img {
+    width: 150px;
+  }
 
-.locat{
-  grid-area:location;
-}
+  .love p {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
 
-/* styling the "about us " section as the provide mockup */
-.aboutus{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  grid-template-areas:
-    "image  about "
-    "image  read"
-    "image  parag"
-    "image para"
-    "image  button";
-  
-}
+  /* about us customization */
 
+  .aboutus {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "image  about "
+      "image  read"
+      "image  parag"
+      "image para"
+      "image  button";
+  }
 
+  #abt {
+    width: 450px;
+    height: 500px;
+    margin-top: -100px;
+    padding-left: 150px;
+  }
 
+  #abt {
+    grid-area: image;
+  }
 
-#abt {
-  width: 350px;
-  height: 470px;
-  margin-top: -100px;
-}
+  .aboutus h2 {
+    grid-area: about;
+  }
 
+  .aboutus h3 {
+    grid-area: read;
+  }
 
-#abt{
-  grid-area:image;
-  
-}
+  .aboutus p {
+    grid-area: parag;
+  }
 
-.aboutus h2{
-  grid-area:about;
-}
+  .aboutus p + p {
+    grid-area: para;
+  }
 
-.aboutus h3{
-  grid-area:read;
-}
+  .learn {
+    grid-area: button;
+  }
 
-.aboutus p{
-  grid-area:parag;
-}
+  /* about us section customization */
 
-.aboutus p + p{
-  grid-area:para;
-}
+  .aboutus h2 {
+    font-size: 25px;
+    margin-top: 50px;
+  }
+  .aboutus h3 {
+    font-size: 48px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 
-.learn{
-  grid-area:button;
-}
+  .aboutus p {
+    font-size: 16px;
+    padding-top: 0px;
+  }
 
+  .learn {
+    width: 210px;
+    font-size: 16px;
+    margin-bottom: 200px;
+    margin-top: 5px;
+  }
 
-/* about us section customization */
+  .aboutus {
+    padding-top: 100px;
+  }
 
-.aboutus h2 {
-font-size: 18px;
-margin-top: 20px;
-}
-.aboutus h3 {
-  font-size: 35px;
-  
-}
+  /* testimonials customization */
 
-.aboutus p {
-font-size: 16px;
-}
+  .container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+    align-items: start;
+  }
 
-.learn {
-  width: 210px;
-  font-size: 16px;
-  margin-bottom: 200px;
-}
+  .testimonials h3 {
+    padding-right: 200px;
+    font-size: 39px;
+    padding-left: 150px;
+  }
 
-.aboutus {
-  padding-top: 100px;
-}
+  .testimonials h2 {
+    padding-right: 200px;
+    font-size: 39px;
+    padding-left: 150px;
+  }
 
-/* testimonials customization */
+  #t1,
+  #t2,
+  #t3 {
+    padding-top: 20px;
+    height: 400px;
+  }
 
-.container1 h3 {
-font-size: 39px;
-padding-right: 100px;
-}
+  .susie blockquote {
+    padding-bottom: 10px;
+  }
 
+  .susie p {
+    padding-bottom: 10px;
+  }
 
+  .jane p {
+  }
 
+  .jane blockquote {
+    margin-bottom: -40px;
+  }
 
+  .scott blockquote {
+    margin-bottom: -70px;
+    margin-right: 20px;
+  }
+  .scott p {
+    margin-bottom: -70px;
+  }
 
+  /* hr customization */
 
-
-
-
-
-
-
-
-
-
+  hr {
+    margin-right: 500px;
+    margin-left: 520px;
+  }
 }

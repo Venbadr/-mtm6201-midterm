@@ -25,8 +25,12 @@
   <body>
     <!-- adding the logo in the header -->
     <header>
-      <div class="container">
-        <img src="images/my-coffee-shop-logo.svg" alt="my-coffee-shop-logo" />
+      <div class="container3">
+        <img
+          src="images/my-coffee-shop-logo.svg"
+          alt="my-coffee-shop-logo"
+          id="logo"
+        />
         <nav>
           <ul class="navs">
             <li><a href="#">About us</a></li>
@@ -147,13 +151,13 @@
             <h2>Our Menu</h2>
             <h3>Explore what we have to offer you</h3>
             <button>Explore our menu</button>
-            </div>
-            <div class="locat">
-              <h2>Locations</h2>
-              <h3>Find your nearest coffee shop</h3>
-              <button class="loca">View Locations</button>
-              </div>
-            </div>
+          </div>
+          <div class="locat">
+            <h2>Locations</h2>
+            <h3>Find your nearest coffee shop</h3>
+            <button class="loca">View Locations</button>
+          </div>
+        </div>
       </section>
       <!-- adding class for the about section for easy css customization  -->
 
@@ -184,32 +188,69 @@
       <!-- adding class for thetestimonials section for easy css customization and seperate each one of them with an id  -->
 
       <section class="testimonials">
+        <h2>Testimonials</h2>
+        <h3>What our customers say about us</h3>
         <div class="container1">
-            <h2>Testimonials</h2>
-            <h3>What our customers say about us</h3>
-            <div class="testi">
-            <img src="images/testimonial-1.jpeg" alt="testimonial-1" id="t1" />
-            <blockquote>
-              "I always make a point to visit My Coffee Company when in Ottawa.
-              Delicious coffee and friendly service."
-            </blockquote>
-            <p>Jane D., Toronto</p>
+          <div class="testi">
+            <picture>
+              <!-- tablet layout -->
+              <source
+                media="(min-width:768px)"
+                srcset="images/testimonial-1-tablet.jpeg"
+              />
+              <img
+                src="images/testimonial-1.jpeg"
+                alt="testimonial-1"
+                id="t1"
+              />
+            </picture>
+            <div class="jane">
+              <blockquote>
+                "I always make a point to visit My Coffee Company when in
+                Ottawa. Delicious coffee and friendly service."
+              </blockquote>
+              <p>Jane D., Toronto</p>
+            </div>
           </div>
           <div class="testi">
-            <img src="images/testimonial-2.jpeg" alt="testimonial-2" id="t2" />
-            <blockquote>
-              "Great atmosphere to get some work done while enjoying a cup or
-              two of incredible coffee."
-            </blockquote>
-            <p>Scott S., Ottawa</p>
+            <picture>
+              <source
+                media="(min-width:768px)"
+                srcset="images/testimonial-2-tablet.jpeg"
+              />
+              <img
+                src="images/testimonial-2.jpeg"
+                alt="testimonial-2"
+                id="t2"
+              />
+            </picture>
+            <div class="scott">
+              <blockquote>
+                "Great atmosphere to get some work done while enjoying a cup or
+                two of incredible coffee."
+              </blockquote>
+              <p>Scott S., Ottawa</p>
+            </div>
           </div>
-          <div class="testi3">
-            <img src="images/testimonial-3.jpeg" alt="testimonial-3" id="t3" />
-            <blockquote>
-              "Best coffee in Ottawa and the service is top notch. Would highly
-              recommend a visit."
-            </blockquote>
-            <p>Susie F., Ottawa</p>
+          <div class="testi">
+            <picture>
+              <source
+                media="(min-width:768px)"
+                srcset="images/testimonial-3-tablet.jpeg"
+              />
+              <img
+                src="images/testimonial-3.jpeg"
+                alt="testimonial-3"
+                id="t3"
+              />
+            </picture>
+            <div class="susie">
+              <blockquote>
+                "Best coffee in Ottawa and the service is top notch. Would
+                highly recommend a visit."
+              </blockquote>
+              <p>Susie F., Ottawa</p>
+            </div>
           </div>
         </div>
       </section>
