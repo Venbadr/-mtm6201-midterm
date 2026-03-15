@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Midterm Project</title>
-    <!-- adding lato and karla -->
+    <!-- adding lato and karla fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -43,9 +43,11 @@
         </nav>
       </div>
     </header>
+    <!-- adding aria roles in the main -->
     <main id="main-content" role="main">
       <section class="hero">
         <picture>
+          <!-- tablet layout -->
           <source
             media="(min-width:768px)"
             srcset="images/hero-background-tablet.jpg"
@@ -72,6 +74,7 @@
         </div>
       </section>
       <section>
+        <!-- adding class for easy css customization -->
         <div class="container">
           <div class="house">
             <h2>Welcome to My Coffee House</h2>
@@ -137,23 +140,24 @@
           </div>
         </div>
       </section>
-      <!-- adding class for the section locations for easy css customization  -->
+      <!-- adding class for the section locations for easy css customization and id for the skip link location -->
       <section class="location" id="loc">
         <picture>
-          <!-- tpc layout -->
+          <!-- pc layout for the coffee shop image -->
           <source
             media="(min-width:1100px)"
             srcset="images/coffee-shop-pc.jpeg"
           />
-          <!-- tablet layout -->
+          <!-- tablet layout for the coffee shop image -->
           <source
             media="(min-width:768px)"
             srcset="images/coffee-shop-tablet.jpeg"
           />
 
-          <!-- mobile layout -->
+          <!-- mobile layout for the coffee shop image -->
           <img src="images/coffee-shop.jpeg" alt="coffee-shop" id="shop" />
         </picture>
+        <!-- adding div class and id for easy css custom, and the id for skip links for easy navigation to the menu -->
         <div class="loc">
           <div class="container" id="menu">
             <h2>Our Menu</h2>
@@ -167,7 +171,7 @@
           </div>
         </div>
       </section>
-      <!-- adding class for the about section for easy css customization  -->
+      <!-- adding class for the about section for easy css customization and the id for skip links for easy navigation to the about section -->
 
       <section class="about" id="aboutus">
         <div class="container">
@@ -201,7 +205,7 @@
         <div class="container1">
           <div class="testi">
             <picture>
-              <!-- tablet layout -->
+              <!-- tablet layout for the coffee shop image -->
               <source
                 media="(min-width:768px)"
                 srcset="images/testimonial-1-tablet.jpeg"
@@ -212,6 +216,7 @@
                 id="t1"
               />
             </picture>
+            <!-- adding class to the testimonial jane for easy layout customization -->
             <div class="jane">
               <blockquote>
                 "I always make a point to visit My Coffee Company when in
@@ -222,6 +227,7 @@
           </div>
           <div class="testi">
             <picture>
+              <!-- tablet layout for the coffee shop image -->
               <source
                 media="(min-width:768px)"
                 srcset="images/testimonial-2-tablet.jpeg"
@@ -232,6 +238,7 @@
                 id="t2"
               />
             </picture>
+            <!-- adding class to the testimonial scott for easy layout customization -->
             <div class="scott">
               <blockquote>
                 "Great atmosphere to get some work done while enjoying a cup or
@@ -242,6 +249,7 @@
           </div>
           <div class="testi">
             <picture>
+              <!-- tablet layout for the coffee shop image -->
               <source
                 media="(min-width:768px)"
                 srcset="images/testimonial-3-tablet.jpeg"
@@ -252,6 +260,7 @@
                 id="t3"
               />
             </picture>
+            <!-- adding class to the testimonial susie for easy layout customization -->
             <div class="susie">
               <blockquote>
                 "Best coffee in Ottawa and the service is top notch. Would
@@ -265,7 +274,7 @@
     </main>
     <!-- adding footer and hr for the page  -->
     <hr />
-
+    <!-- adding the footer for the page copyright -->
     <footer>
       <p>© My Coffee Company 2024</p>
     </footer>

@@ -132,7 +132,7 @@ table {
 
 /* css customization for mobile */
 
-/* The maximum width of the wrapper (container) within each section is 1200px */
+/* The maximum width of the wrapper  within each section is 1200px */
 
 header,
 main,
@@ -217,6 +217,8 @@ header img {
   opacity: 0.4;
 }
 
+/* adding animation for the wrapper */
+
 @keyframes fade {
   from {
     opacity: 0;
@@ -233,6 +235,7 @@ header img {
   animation: fade 1s ease-out;
 }
 
+/* h1 customization matching the fonts and layout design */
 .wrapper h1 {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
@@ -319,7 +322,7 @@ button:focus {
   margin-top: 20px;
 }
 
-/* grid customization to have the same mobile layout */
+/* grid customization using grid area to have the same mobile layout */
 
 .layout {
   display: grid;
@@ -626,6 +629,8 @@ button:focus {
   text-transform: uppercase;
   font-size: 20px;
 }
+/* customization of each testimonials to match the layout given  */
+
 .jane p {
   margin-bottom: -40px;
 }
@@ -981,7 +986,7 @@ hr {
     margin-left: 0px;
   }
 
-  /* about us customization */
+  /* about us customization using grid area */
 
   .aboutus {
     display: grid;
@@ -1058,7 +1063,7 @@ hr {
     margin-bottom: 50px;
   }
 
-  /* testimonials customization */
+  /* testimonials customization using grid template for better alignment */
 
   .container1 {
     display: grid;
@@ -1087,6 +1092,7 @@ hr {
     padding-top: 20px;
     height: 400px;
   }
+  /* customization of each testimonials for better alignment */
 
   .susie blockquote {
     padding-bottom: 10px;
