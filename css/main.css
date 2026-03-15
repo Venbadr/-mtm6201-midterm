@@ -146,6 +146,10 @@ body {
   margin: 0;
   background-color: #000;
 }
+.skip-link {
+  color: #d69e3d;
+  text-decoration: none;
+}
 
 /* div customization */
 .wrapper {

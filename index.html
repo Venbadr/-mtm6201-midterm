@@ -23,24 +23,27 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
+    <!-- adding skip links to go to main content of the page -->
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
     <!-- adding the logo in the header -->
-    <header>
+    <header role="banner">
       <div class="container3">
         <img
           src="images/my-coffee-shop-logo.svg"
-          alt="my-coffee-shop-logo"
+          alt="The logo of the coffee shop"
           id="logo"
         />
-        <nav>
+        <nav aria-label="Main navigation" role="navigation">
           <ul class="navs">
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Locations</a></li>
+            <!-- adding jump links to items -->
+            <li><a href="#aboutus">About us</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#loc">Locations</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <main>
+    <main id="main-content" role="main">
       <section class="hero">
         <picture>
           <source
@@ -51,7 +54,7 @@
           <!-- mobile layout -->
           <img
             src="images/hero-background.jpeg"
-            alt="hero-background"
+            alt="background image of the coffee shop"
             id="hero"
           />
         </picture>
@@ -80,12 +83,12 @@
               <img src="images/latte.jpeg" alt="latte" id="latte" />
               <img
                 src="images/coffee-beans.jpeg"
-                alt="coffee-shop"
+                alt=" coffee beans"
                 id="coffee"
               />
               <img
                 src="images/pouring-coffee.jpeg"
-                alt="pouring-coffee"
+                alt="pouring coffee into a cup"
                 id="pouring"
               />
               <img src="images/three-cups.jpeg" alt="three-cups" id="cups" />
@@ -104,7 +107,7 @@
           <h3>Why visit us?</h3>
           <div class="gold2">
             <div class="fair">
-              <img src="images/fair-trade.svg" alt="fair-trade" />
+              <img src="images/fair-trade.svg" alt="fair trade" />
               <h4>Fair Trade Coffee</h4>
               <p>
                 We build direct relationships with the farmers and producers who
@@ -135,7 +138,7 @@
         </div>
       </section>
       <!-- adding class for the section locations for easy css customization  -->
-      <section class="location">
+      <section class="location" id="loc">
         <picture>
           <!-- tablet layout -->
           <source
@@ -147,7 +150,7 @@
           <img src="images/coffee-shop.jpeg" alt="coffee-shop" id="shop" />
         </picture>
         <div class="loc">
-          <div class="container">
+          <div class="container" id="menu">
             <h2>Our Menu</h2>
             <h3>Explore what we have to offer you</h3>
             <button>Explore our menu</button>
@@ -161,7 +164,7 @@
       </section>
       <!-- adding class for the about section for easy css customization  -->
 
-      <section class="about">
+      <section class="about" id="aboutus">
         <div class="container">
           <div class="aboutus">
             <img src="images/about-us.jpeg" alt="about" id="abt" />
